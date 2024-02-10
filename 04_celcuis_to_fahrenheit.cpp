@@ -4,16 +4,17 @@
 using namespace std;
 int main() {
   
-    float cel, faren; //declare variable
+    float cel, faren; //declare variables
 
-    // Get age input
+    // Get input temperature in degree celcuis
     cout << "Enter temperature in degree celcius: ";
     cin >> cel;
 
-    // Covert celcuis to farenheit
+    // Convert celcuis to farenheit
     faren=((9/5)*cel)+32;
-    
-    cout<<"Temperature in degree farenheit is: " << faren << end1;
+
+    //display result temperature in degree fahrenheit
+    cout<<"Temperature in degree fahrenheit is: " << faren << end1;
 
     return 0;
 }
