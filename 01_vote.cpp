@@ -10,11 +10,13 @@ int main() {
     cout << "Enter your age: ";
     cin >> age;
 
-    // Check eligibility using if else
+    // Check eligibility condition using if else
     if (age >= 18) {
         cout << "Hooray! You are eligible to vote!\n";
-    } else {
-        cout << "Oopsie, you are not eligible to vote yet. Wait until you turn 18.\n";
+    } 
+    
+    else {
+        cout << "Oopsie, you are not eligible to vote yet.\n";
     }
 
     return 0;
