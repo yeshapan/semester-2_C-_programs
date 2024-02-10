@@ -7,10 +7,10 @@ int main() {
     char grade;
   
     // Input marks from the user
-    cout << "Enter the marks: ";
+    cout << "Enter marks obtained : ";
     cin >> marks;
 
-    // Find grade
+    // Find grade using else if statements
     if (marks >= 90) {
         grade = 'A';
     } 
@@ -27,7 +27,7 @@ int main() {
         grade = 'F';
     }
 
-    // Display the grade
+    // Display the grade obtained
     cout << "Grade: " << grade << endl;
 
     return 0;
