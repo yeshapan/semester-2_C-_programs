@@ -40,3 +40,51 @@ int main(){
     object1.calculate_volume();
     return 0;
 }
+
+//--------------------------------------------------------------------------------------OR----------------------------------------------------------------------------------------
+
+//using scope resolution operator and defining member functions outside class
+#include <iostream>
+using namespace std;
+
+class room{
+    private:
+        int length, breadth, height;
+    public:
+        //initialised functions but definition outside class
+        void getdata();
+        
+        void calculate_area();
+        
+        void calculate_volume();
+};
+
+//defined the member functions outside class using scope resolution operator
+void room:: getdata(){
+    cout<<"Enter length of room: ";
+    cin>>length;
+    cout<<"Enter breadth of room: ";
+    cin>>breadth;
+    cout<<"Enter height of room: ";
+    cin>>height;
+}
+
+void room:: calculate_area(){
+    int area;
+    area=length*breadth;
+    cout<<"Area of the room is "<<area<<endl;
+}
+
+void room:: calculate_volume(){
+    int volume;
+    volume=length*breadth*height;
+    cout<<"Volume of the room is "<<volume<<endl;
+}
+
+int main(){
+    room object1;
+    object1.getdata();
+    object1.calculate_area();
+    object1.calculate_volume();
+    return 0;
+}
