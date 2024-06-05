@@ -1,0 +1,18 @@
+#include<iostream>
+#include <fstream>
+using namespace std;
+int main(){
+    //create a string to store contents of file
+    string mytext;
+    
+    //open file to read from it
+    ifstream myfile("filename.txt");
+    
+    //read and store contents of file in string
+    while(getline(myfile,mytext)){
+        cout<<mytext;
+    }
+    
+    //close the file
+    myfile.close();
+}
